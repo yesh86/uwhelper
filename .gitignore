@@ -1,0 +1,28 @@
+# Environment variables
+.env
+*.env
+
+# Data files (proprietary)
+data/
+embeddings/
+*.txt
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE files (PyCharm, VSCode)
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
