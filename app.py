@@ -1,8 +1,8 @@
 import os
 
 # Set API key FIRST, before any other imports or initialization
-os.environ['ANTHROPIC_API_KEY'] = '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'
-print(f"🔑 API key set: {os.environ.get('ANTHROPIC_API_KEY', 'NOT FOUND')[:20]}...")
+#os.environ['ANTHROPIC_API_KEY'] = ''
+#print(f"🔑 API key set: {os.environ.get('ANTHROPIC_API_KEY', 'NOT FOUND')[:20]}...")
 
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
@@ -15,9 +15,18 @@ import re
 from datetime import datetime
 import logging
 
-# Load environment variables (but API key is already set above)
+# Load environment variables
 load_dotenv()
 
+# API key will be loaded from environment variable
+# Locally: from .env file
+# On Render: from environment variable set in dashboard
+api_key = os.environ.get('ANTHROPIC_API_KEY')
+if not api_key:
+    print("❌ ANTHROPIC_API_KEY not found in environment variables!")
+    print("Please set it in .env file (local) or environment variables (deployment)")
+else:
+    print(f"✅ API key loaded: {api_key[:20]}...")
 # Test API key immediately after setting it
 print("🧪 Testing API key before RAG initialization...")
 try:
