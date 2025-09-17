@@ -1,0 +1,84 @@
+{
+  "form_number": "AG 99 07 12 19",
+  "exact_matches": [
+    {
+      "chunk_index": 0,
+      "position": 28,
+      "context": "This is a sample chunk with AG 99 07 12 19 form number",
+      "full_chunk": "This is a sample chunk with AG 99 07 12 19 form number",
+      "match_type": "exact"
+    },
+    {
+      "chunk_index": 3,
+      "position": 5,
+      "context": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "full_chunk": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "match_type": "exact"
+    }
+  ],
+  "partial_matches": [
+    {
+      "chunk_index": 0,
+      "position": 28,
+      "context": "This is a sample chunk with AG 99 07 12 19 form number",
+      "full_chunk": "This is a sample chunk with AG 99 07 12 19 form number",
+      "match_type": "exact"
+    },
+    {
+      "chunk_index": 3,
+      "position": 5,
+      "context": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "full_chunk": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "match_type": "exact"
+    }
+  ],
+  "pattern_matches": [
+    {
+      "chunk_index": 0,
+      "position": 28,
+      "matched_text": "AG 99 07 12 19",
+      "context": "This is a sample chunk with AG 99 07 12 19 form number",
+      "full_chunk": "This is a sample chunk with AG 99 07 12 19 form number",
+      "match_type": "regex"
+    },
+    {
+      "chunk_index": 3,
+      "position": 5,
+      "matched_text": "AG 99 07 12 19",
+      "context": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "full_chunk": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "match_type": "regex"
+    },
+    {
+      "chunk_index": 0,
+      "position": 28,
+      "matched_text": "AG 99 07 12 19",
+      "context": "This is a sample chunk with AG 99 07 12 19 form number",
+      "full_chunk": "This is a sample chunk with AG 99 07 12 19 form number",
+      "match_type": "regex"
+    },
+    {
+      "chunk_index": 3,
+      "position": 5,
+      "matched_text": "AG 99 07 12 19",
+      "context": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "full_chunk": "Form AG 99 07 12 19 should be used for charitable organizations",
+      "match_type": "regex"
+    },
+    {
+      "chunk_index": 2,
+      "position": 0,
+      "matched_text": "AG990-IL revised 07/12/19",
+      "context": "AG990-IL revised 07/12/19 is the correct form",
+      "full_chunk": "AG990-IL revised 07/12/19 is the correct form",
+      "match_type": "regex"
+    }
+  ],
+  "semantic_matches": [],
+  "summary": {
+    "total_text_matches": 9,
+    "semantic_matches": 0,
+    "chunks_searched": 4,
+    "found_in_data": true
+  }
+}
